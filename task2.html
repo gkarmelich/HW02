@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <script>
+         var num = 10;
+         
+         function current_value() {
+             alert(num)
+         }
+         
+         function increment() {
+             num = num + 1;
+             return num;
+         }
+         
+         function append() {
+             var new_p = document.createElement("p");
+             var new_num = document.createTextNode(num);
+             new_p.appendChild(new_num);
+             document.body.appendChild(new_p);
+         }
+      </script>
+   </head>
+   <body>
+      <h1>
+         10
+      </h1>
+      <button onclick="current_value()"> See Current Value </button>
+      <button onclick="increment()">Increment</button>
+      <button onclick="append()">Append</button>
+      <p>
+   </body>
+</html>
