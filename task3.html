@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
    <head>
+      <meta charset="utf-8">
+      <title> Task3 </title>
       <style>
          h1 {text-align: center;}
          .L {float: left;
@@ -17,9 +19,9 @@
          var p3 = "A variation of the ordinary lorem ipsum text has been used in typesetting since the 1960s or earlier, when it was popularized by advertisements for Letraset transfer sheets. It was introduced to the Information Age in the mid-1980s by Aldus Corporation, which employed it in graphics and word-processing templates for its desktop publishing program PageMaker.";
          var p4 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
          
-         document.getElementById("99 Bottles").innerHTML = "";
-         document.getElementById("Last Thing").innerHTML = "";
-         document.getElementById("Lorem Ipsem").innerHTML = p1 + "<br />" + "<br />" + p2 + "<br />"  + "<br />" + p3 + "<br />" + "<br />"  + p4;  
+         document.getElementById("99Bottles").innerHTML = "";
+         document.getElementById("LastThing").innerHTML = "";
+         document.getElementById("LoremIpsem").innerHTML = p1 + "<br />" + "<br />" + p2 + "<br />"  + "<br />" + p3 + "<br />" + "<br />"  + p4;  
          }
          
          function bottles(){
@@ -28,16 +30,16 @@
          var p3 = "97 bottles of beer on the wall, 97 bottles of beer. Take one down, pass it around, 96 bottles of beer on the wall..";
          var p4 = "96 bottles of beer on the wall, 96 bottles of beer. Take one down, pass it around, 95 bottles of beer on the wall..";
          
-         document.getElementById("Lorem Ipsem").innerHTML = "";
-         document.getElementById("Last Thing").innerHTML = "";
-         document.getElementById("99 Bottles").innerHTML = p1 + "<br />" + "<br />" + p2 + "<br />"  + "<br />" + p3 + "<br />" + "<br />"  + p4;
+         document.getElementById("LoremIpsem").innerHTML = "";
+         document.getElementById("LastThing").innerHTML = "";
+         document.getElementById("99Bottles").innerHTML = p1 + "<br />" + "<br />" + p2 + "<br />"  + "<br />" + p3 + "<br />" + "<br />"  + p4;
          }
          
          function thing(){
          var text = "this is the third thing";
-         document.getElementById("99 Bottles").innerHTML = "";
-         document.getElementById("Lorem Ipsem").innerHTML = "";
-          document.getElementById("Last Thing").innerHTML = text;
+         document.getElementById("99Bottles").innerHTML = "";
+         document.getElementById("LoremIpsem").innerHTML = "";
+          document.getElementById("LastThing").innerHTML = text;
          }
          
       </script>
@@ -47,15 +49,15 @@
          HW02 Task Three
       </h1>
       <p>
-         <span class="L"><a href="#Lorem Ipsem" onclick="ipsem()">Lorem Ipsem </a><br> 
-         <a href="#99 Bottles" onclick="bottles()">99 Bottles </a><br> 
-         <a href="#Last Thing" onclick="thing()">Last Thing </a> </span>
+         <span class="L"><a href="#LoremIpsem" onclick="ipsem()">Lorem Ipsem </a><br> 
+         <a href="#99Bottles" onclick="bottles()">99 Bottles </a><br> 
+         <a href="#LastThing" onclick="thing()">Last Thing </a> </span>
          <span class="R">
-         <a id="Lorem Ipsem" alt="Attribution to the following Wikipedia article: https://en.wikipedia.org/wiki/Lorem_ipsum">
+         <a id="LoremIpsem" title="Attribution to the following Wikipedia article: https://en.wikipedia.org/wiki/Lorem_ipsum">
          </a>
-         <a id="99 Bottles" alt="Attribution to the following Wikipedia article: https://en.wikipedia.org/wiki/99_Bottles_of_Beer">
+         <a id="99Bottles" title="Attribution to the following Wikipedia article: https://en.wikipedia.org/wiki/99_Bottles_of_Beer">
          </a>
-         <a id="Last Thing">
+         <a id="LastThing">
          </a>
          </span>
       </p>
